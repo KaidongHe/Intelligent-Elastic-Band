@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/style.qss</file>
+        <file>images/Ecg.png</file>
+        <file>res/fatigued.png</file>
+        <file>res/fatigued-orange.png</file>
+        <file>res/speed.png</file>
+        <file>res/speed-orange.png</file>
+        <file>res/fatigued1-gray.png</file>
+        <file>res/fatigued1-orange.png</file>
+        <file>res/fatigued1-red.png</file>
+        <file>res/speed2-gray.png</file>
+        <file>res/speed2-orange.png</file>
+        <file>res/speed2-red.png</file>
+        <file>res/up.png</file>
+        <file>res/up_white.png</file>
+    </qresource>
+</RCC>

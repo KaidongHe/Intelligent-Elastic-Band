@@ -1,0 +1,219 @@
+﻿QWidget
+{
+    border-radius: 20px;
+   /* background-color:white;*/
+   /* border: 2px solid black;*/
+}
+
+QWidget#infoWindow
+{
+    border-radius: 20px;
+    background-color:white;
+    border: 2px solid black;
+}
+
+QComboBox{
+    background-color: White; /* 背景颜色 */
+    color: #1E5485; /* 文本颜色 */
+    font-family: "Microsoft YaHei";
+    font-size: 20pt;
+    /*border:1px solid rgba(228,228,228,1);*/
+    border-radius: 5px;  /* 设置圆角半径为5px */
+}
+
+QComboBox#devicesComboBox {
+    font-family: "Microsoft YaHei";
+    font-size: 20pt;
+}
+
+/*QCombobox右侧按钮*/
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;/*放于右方顶部*/
+    width: 35px;/*设置按钮范围宽度*/
+        /*border-radius: 15px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;*/
+
+    border-top-right-radius: 3px;/*设置边框圆角*/
+    border-bottom-right-radius: 3px;
+/*padding-right: 50px;*/
+}
+
+/*QCombobox右侧按钮的箭头图标*/
+QComboBox::down-arrow {
+        border-image: url(:/res/up_white.png);/*自定义图片填充*/
+        width: 30px;/*设置该图标的宽高*/
+        height: 10px;
+}
+
+QComboBox:hover {
+    border: 2px solid #6495ED;  /* 改变边框颜色 */
+    background-color: #F0F8FF;  /* 改变背景颜色 */
+}
+
+QComboBox::down-arrow {
+    width: 20px;   /* 下拉框的宽度 */
+    border-top-right-radius: 5px;   /* 下拉框的右上边界线的圆角半径（应和整个QComboBox右上边界线的圆角半径一致） */
+    border-bottom-right-radius: 5px;   /* 同上 */
+
+}
+
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    width: 20px;
+    background-color: #C1CEEB;   /* 空白区域的背景色 */
+}
+
+
+QComboBox QAbstractItemView/*::item*/ {
+    background-color: #E0E2FB; /* 设置项的背景颜色 */
+    color: black; /* 设置项的文本颜色 */
+    font-size: 15pt;
+}
+
+QLabel {
+    font-family: "Microsoft YaHei";
+    font-size: 25pt;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+QLabel#label_logo{
+    border: 1.5px solid #D4D4D4;
+    color: #D4D4D4;
+    font-size: 16pt;
+
+}
+
+
+QLabel#label_Velocity{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 50pt;
+    border-radius: 10px; /* 设置圆角半径为10px */
+    color: #0713AD;
+}
+
+QLabel#label_Force {
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 50pt;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+QLabel#label_Velocity,
+QLabel#label_Velocitytext {
+    color: #0713AD;
+}
+
+QLabel#label_Forcetext,
+QLabel#label_Force{
+    color: black;
+}
+
+QLabel#label_Vlosstext{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: BDBFBF;
+    font-size: 20pt;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+QLabel#label_Fatiguetext {
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    color: BDBFBF;
+    font-size: 20pt;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+
+QLabel#label_Power{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 50pt;
+    color: #EDB784;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+QLabel#label_Cycle{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 50pt;
+    color: #76D9C2;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+QLabel#label_OS{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 50pt;
+    color: #DA879C;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+
+QLabel#label_OverSpeed,
+QLabel#label_Powertext,
+QLabel#label_Cycletext{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+    font-size: 20pt;
+    color: #A2A2A2;
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+
+
+
+QLabel#label_Resistance[customTextColor="true"],
+QLabel#label_PVC[customTextColor="true"],
+QLabel#label_Velocity[customTextColor="true"],
+QLabel#label_Var[customTextColor="true"],
+QLabel#label_HRtext[customTextColor="true"],
+QLabel#label_IMUtext[customTextColor="true"],
+QLabel#label_PVCtext[customTextColor="true"],
+QLabel#label_HR_MIN[customTextColor="true"],
+QLabel#label_Velocity_MIN[customTextColor="true"]
+{
+    background-color: red;
+    color: white;
+}
+
+
+QLabel#label_runState[customTextColor="true"]
+{
+    image: url(:/res/motion_state.png);
+    }
+
+QLabel#label_runState{
+    image: url(:/res/static_state.png);
+}
+QLabel#label_Warn_pic[customTextColor="true"]
+{
+    image: url(:/res/fatigued1-orange.png);
+}
+QLabel#label_Warn_pic
+{
+    image: url(:/res/fatigued1-gray.png);
+}
+
+
+QPushButton {
+    font-family: "Microsoft YaHei";
+    font-size: 20pt;
+    border-radius: 5px; /* 圆角半径为 5px */
+    background-color: white; /* 背景颜色 3a5e7e */
+    color: #1E5485; /* 文本颜色 white*/
+}
+
+/* 按钮鼠标悬停状态样式 */
+QPushButton:hover {
+    border: 2px solid #1E5485;
+}
+
+/* 按钮按下状态样式 */
+QPushButton:pressed {
+    border: 2px solid #1B5386;
+}
